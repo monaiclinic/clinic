@@ -7,7 +7,7 @@
     <div
       class="max-w-screen-xl px-4 md:absolute md:text-white  h-20 2xl:top-[200px] 2xl:left-[20.444rem] lg:top-[200px] lg:left-[3.12rem]">
       <div class="max-w-[800px]">
-        <div class="text-2xl mt-2 font-bold md:text-4xl text-center md:text-start">Sua pele merece o melhor: resultados visíveis, autoestima renovada.</div>
+        <div class="text-2xl mt-2 font-bold md:text-4xl text-start">Sua pele merece o melhor: resultados visíveis, autoestima renovada.</div>
         <div class="text-lg mt-4  text-start">
           Sua pele reflete sua história e merece atenção especial a cada detalhe.
           Na nossa clínica, oferecemos tratamentos que vão além da estética: promovem bem-estar, confiança e
