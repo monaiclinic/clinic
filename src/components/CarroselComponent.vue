@@ -1,6 +1,6 @@
 <template>
-  <div class="mt-[68px] md:relative h-[680px] md:max-h-none">
-    <video autoplay muted loop playsinline class="md:w-screen md:h-[calc(100vh-68px)] object-cover">
+  <div class="mt-[96px] md:relative md:h-[calc(100vh-68px)] md:max-h-none">
+    <video autoplay muted loop playsinline class="md:w-screen  object-cover">
       <source src="/video/banner.mp4" type="video/mp4" />
     </video>
 
