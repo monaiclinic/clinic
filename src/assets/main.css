@@ -1,7 +1,8 @@
 @import "tailwindcss";
+@import "flowbite";
+@import "./base.css";
 
 @import './base.css';
-
 
 #app {
   font-weight: normal;

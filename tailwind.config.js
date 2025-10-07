@@ -1,11 +1,18 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: [
-    "./index.html",
-    "./src/**/*.{vue,js,ts,jsx,tsx}",
-    "./node_modules/flowbite/**/*.js"
-  ],
+export default {
+
   theme: {
+    screens: {
+      'xs': '320px',    // Celulares muito pequenos
+      'sm': '640px',    // Celulares grandes / Tablets pequenos
+      'md': '768px',    // Tablets
+      'lg': '1024px',   // Laptops
+      'xl': '1280px',   // Desktops
+      '2xl': '1536px',  // Monitores grandes
+      '3xl': '1920px',  // Full HD
+      '4xl': '2560px',  // 2K / QHD
+      '5xl': '3840px',  // 4K / UHD
+    },
     extend: {
       colors: {
         'black-6': '#0F0E0D',
@@ -19,4 +26,9 @@ module.exports = {
   plugins: [
     require('flowbite')
   ],
+  content: [
+    "./index.html",
+    "./src/**/*.{vue,js,ts,jsx,tsx}",
+    "./node_modules/flowbite/**/*.js"
+  ]
 };

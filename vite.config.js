@@ -7,7 +7,7 @@ export default defineConfig({
   base: '/clinic/',
   plugins: [
     vue(),
-    tailwindcss(),
+    tailwindcss(), 
   ],
   resolve: {
     alias: {

@@ -14,6 +14,16 @@
   --pantone-000-c: #F1F0EC;
   --pantone-000-c: #FFFFFF;
   --slide-width: 500px;
+
+  --screen-xs: 320px;
+  --screen-sm: 390px;
+  --screen-md: 768px;
+  --screen-lg: 1024px;
+  --screen-xl: 1366px;
+  --screen-2xl: 1536px;
+  --screen-3xl: 1920px;
+  --screen-4xl: 2560px;
+  --screen-5xl: 3840px;
 }
 
 *,
@@ -31,3 +41,4 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
