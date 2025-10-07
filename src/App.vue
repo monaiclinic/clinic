@@ -1,11 +1,8 @@
 <template>
     <HeaderComponent />
     <CarroselComponent />
-    <main class="min-h-screen pt-20">
-        <div class="container mx-auto p-4">
-            <h1 class="text-3xl font-bold mb-4 text-center text-blue-600">Welcome to the Vue.js App with Flowbite</h1>
-            <p class="text-center text-gray-700">This is a simple application demonstrating the integration of Flowbite components in a Vue.js project.</p>
-        </div>
+    <main class="min-h-screen text-center mt-6 text-black md:mt-54">
+       Em construção
     </main>
 </template>
 
