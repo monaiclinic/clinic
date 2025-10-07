@@ -1,5 +1,5 @@
 <template>
-    <div class="mt-80 md:mt-[233px] px-4 md:px-0">
+    <div class="px-4 md:px-0">
         <l-map :zoom="zoom" :center="center" style="height: 500px; width: 100%">
             <l-tile-layer :url="url" :attribution="attribution" />
             <l-marker :lat-lng="center" />

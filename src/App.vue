@@ -2,6 +2,9 @@
     <HeaderComponent />
     <CarroselComponent />
     <MapaComponent />
+    <div>
+        continuando...
+    </div>
 </template>
 
 <script setup>

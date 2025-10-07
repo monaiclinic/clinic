@@ -1,8 +1,8 @@
 <template>
-  <nav class="bg-white fixed w-full z-20 top-0 start-0">
+  <nav class="bg-white sticky w-full z-20 top-0 start-0 border-b border-gray-200 navbar-custom">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2 md:p-0">
       <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-        <img src="/img/MONAI CLINIC_MARCA_PNG_21.png" class="h-20 md:h-24" alt="Flowbite Logo">
+        <LogoIcon />
       </a>
       <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
         <button type="button"
@@ -55,6 +55,8 @@
 </template>
 
 <script setup>
+import LogoIcon from './icons/LogoIcon.vue';
+
 
 </script>
 
@@ -64,5 +66,9 @@ h1 {
   font-size: 3rem;
   font-weight: bold;
   color: #4f46e5;
+}
+
+.navbar-custom {
+  z-index: 1000;
 }
 </style>
