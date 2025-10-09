@@ -1,20 +1,18 @@
 <template>
-    <HeaderComponent />
-    <CarroselComponent />
-    <div>dsadas</div>
+    <!-- https://chatgpt.com/c/68e702a2-bb70-8331-82c6-82aea24aab0e -->
+    <NavegationSection />
+    <HeroSection />
+
 </template>
 
 <script setup>
 import { onMounted } from 'vue'
 import { initFlowbite } from 'flowbite'
-import HeaderComponent from './components/HeaderComponent.vue'
-import CarroselComponent from './components/CarroselComponent.vue'
-import MapaComponent from "./components/MapaComponent.vue"
-import ProvaSocialComponent from './components/ProvaSocialComponent.vue'
-import MenuComponent from './components/MenuComponent.vue'
-
+import HeroSection from './components/HeroSection.vue'
+import NavegationSection from './components/NavegationSection.vue'
 
 onMounted(() => {
     initFlowbite()
 })
+
 </script>
