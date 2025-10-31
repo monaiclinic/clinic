@@ -1,157 +1,118 @@
 <template>
-    <div class="hero-wrapper">
-      <div class="hero-cta">
-        <h1>Realce sua Beleza Natural ✨</h1>
-        <p>
-          Cuidamos da sua pele com tecnologia de ponta e um olhar humano. Cada tratamento é pensado para realçar a beleza que já existe em você, com leveza e respeito à sua essência.
+  <div class="container">
+    <div class="content">
+      <div class="left">
+        <h1 class="titulo--principal">
+          Redescrubra sua <br> <span>melhor versão</span>
+        </h1>
+        <p class="paragrafo">
+
+          Tratamentos faciais exclusivos com tecnologia avançada e o cuidado personalizado que você merece.
+
         </p>
-        <div>
-          <form action="">
-            <div class="wrapper__input">
-              <input type="text" placeholder="nome">
-              <input type="text" placeholder="telefone">
-            </div>
-            <div class="wrapper__btn">
-              <button>Agendar Avaliação</button>
-            </div>
-          </form>
-        </div>
+      </div>
+      <div class="right">
+        <img src="/img/09.jpg" alt="">
       </div>
     </div>
-  </template>
-  
-  <script setup></script>
-  
-  <style scoped>
-  .hero-wrapper {
-    background-image: url('/img/hero_section.png');
-    height: 713px;
+  </div>
+  <div>dsad</div>
+</template>
+
+<script setup></script>
+
+<style scoped lang="scss">
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 6rem 50px 6rem 36px;
+  background: linear-gradient(105deg, #f5e9b841 0%, #FFFFFF 100%);
+}
+
+.container>div {
+  height: 50px;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  gap: 2.5rem;
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.container .left {
+  height: 400px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container .left h1.titulo--principal {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 100%;
+}
+
+.container .left h1 span {
+  color: #e2ab34;
+  font-weight: bold;
+}
+
+.container .left p.paragrafo {
+  font-size: 1.45rem;
+  width: 100%;
+  color: #3a3939;
+  text-align: justify;
+}
+
+.container .right {
+  height: 400px;
+  width: 50%;
+  border-radius: 1rem;
+}
+
+.container .right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+
+@media screen and (max-width: 1920px) {}
+
+@media screen and (max-width: 1368px) {}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    padding: 2rem 20px 4rem 20px;
+  }
+
+  .container>div {
+    flex-direction: column;
+
+  }
+
+  .container .left h1.titulo--principal {
+    font-size: 2.4rem;
+    text-align: center;
+  }
+
+  .container .left p.paragrafo {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .container .left {
+    justify-content: start;
+    height: auto;
+  }
+
+  .container .left,
+  .container .right {
     width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
+    height: auto;
   }
-  
-  .hero-cta {
-    max-width: 90rem;
-    margin: 0 auto;
-    padding: 5px;
-    width: 100%;
-  }
-  
-  .hero-cta h1 {
-    font-size: 40px;
-    max-width: 600px;
-    width: 100%;
-  }
-  
-  .hero-cta p {
-    margin-top: 0.8rem;
-    font-size: 16px;
-    max-width: 600px;
-    width: 100%;
-    color: #000000;
-    text-align: justify;
-  }
-  
-  .hero-cta div {
-    margin-top: 2rem;
-  }
-  
-  .hero-cta div form .wrapper__input {
-    display: flex;
-    gap: 0.3rem;
-  }
-  
-  .hero-cta div form .wrapper__input input {
-    border: unset;
-    border-radius: 0.4rem;
-    width: 250px;
-    max-width: 100%;
-    padding: 0.7rem 1rem;
-    font-size: 1rem;
-  }
-  
-  .hero-cta div form .wrapper__btn {
-    margin-top: 15px;
-  }
-  
-  .hero-cta div form .wrapper__btn button {
-    border: unset;
-    height: 45px;
-    background-color: rgb(34, 145, 30);
-    width: 250px;
-    max-width: 100%;
-    border-radius: 0.4rem;
-    cursor: pointer;
-    font-weight: 700;
-    color: #F1F0EC;
-    font-size: 1rem;
-  }
-  
-  .hero-cta div form .wrapper__btn button:hover {
-    background-color: rgba(34, 145, 30, 0.829)
-  }
-  
-  /* Responsividade até 900px */
-  @media (max-width: 900px) {
-    .hero-wrapper {
-      height: auto;
-      min-height: 520px;
-      padding: 2rem 0;
-    }
-    .hero-cta {
-      padding-top: 3rem;
-      padding-left: 1rem;
-      padding-right: 1rem;
-    }
-    .hero-cta h1 {
-      font-size: 2rem;
-      max-width: 420px;
-    }
-    .hero-cta p {
-      font-size: 1rem;
-      max-width: 420px;
-    }
-    .hero-cta div form .wrapper__input {
-      flex-wrap: wrap;
-      gap: 1rem;
-    }
-    .hero-cta div form .wrapper__input input,
-    .hero-cta div form .wrapper__btn button {
-      width: 100%;
-      min-width: 180px;
-    }
-  }
-  
-  /* Responsividade até 600px (mobile) */
-  @media (max-width: 600px) {
-    .hero-cta {
-      padding-top: 2rem;
-      padding-left: 0.5rem;
-      padding-right: 0.5rem;
-    }
-    .hero-cta h1 {
-      font-size: 1.3rem;
-      max-width: 100%;
-      text-align: center;
-    }
-    .hero-cta p {
-      font-size: 0.98rem;
-      max-width: 100%;
-      text-align: left;
-      margin-bottom: 1rem;
-    }
-    .hero-cta div form .wrapper__input {
-      flex-direction: column;
-      gap: 1rem;
-      width: 100%;
-    }
-    .hero-cta div form .wrapper__input input,
-    .hero-cta div form .wrapper__btn button {
-      width: 100%;
-    }
-  }
-  </style>
-  
+}
+</style>

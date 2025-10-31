@@ -1,5 +1,6 @@
 <template>
     <!-- https://chatgpt.com/c/68e702a2-bb70-8331-82c6-82aea24aab0e -->
+    <!-- https://uxpilot.ai/a/ui-design?page=lqe4VcpSwooQoktDaHRw -->
     <NavegationSection />
     <HeroSection />
 

@@ -1,3 +1,42 @@
+@font-face {
+  font-family: 'Fahkwang';
+  src: url('/fonts/Fahkwang-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Fahkwang';
+  src: url('/fonts/Fahkwang-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Fahkwang';
+  src: url('/fonts/Fahkwang-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Fahkwang';
+  src: url('/fonts/Fahkwang-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Fahkwang';
+  src: url('/fonts/Fahkwang-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Fahkwang';
+  src: url('/fonts/Fahkwang-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+/* Repita o bloco para todas as demais variações (Italic, ExtraLight, etc) que você precisar */
+
+
 :root {
   --color-white: #fff;
   --color-shadow: rgba(0, 0, 0, 0.7);
@@ -35,10 +74,17 @@
 
 body {
   line-height: 1.6;
-  font-family: 'Fahkwang', sans-serif;
   font-size: 15px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+body,
+h1, h2, h3, h4, h5, h6,
+select {
+  font-family: 'Fahkwang', sans-serif !important;
+}
+
+
 
